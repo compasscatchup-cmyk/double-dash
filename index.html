@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Double Dash!! · Guía al 100% | Compass Catchup</title>
+<meta name="description" content="Guía interactiva de Mario Kart: Double Dash!! de Compass Catchup: palomea copas, karts, pilotos, atajos y retos, y lleva tu progreso al 100%.">
+<meta name="theme-color" content="#DC122E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Compass Catchup">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Double Dash!! · Guía al 100% | Compass Catchup">
+<meta property="og:description" content="Palomea copas, karts, pilotos, atajos y retos. Tu progreso se guarda en tu navegador. 🍅🏁">
+<meta property="og:url" content="https://compasscatchup-cmyk.github.io/double-dash/">
+<meta property="og:image" content="https://compasscatchup-cmyk.github.io/double-dash/og-image.png">
+<meta property="og:image:secure_url" content="https://compasscatchup-cmyk.github.io/double-dash/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Guía de Double Dash!! de Compass Catchup con dos jitomates manejando un kart">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Double Dash!! · Guía al 100% | Compass Catchup">
+<meta name="twitter:description" content="Palomea copas, karts, pilotos, atajos y retos. Tu progreso se guarda en tu navegador.">
+<meta name="twitter:image" content="https://compasscatchup-cmyk.github.io/double-dash/og-image.png">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Press+Start+2P&family=Rubik:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gris:#929090;--gris2:#d9d7d6;--gris3:#efeeed;
+  --rojo:#E62523;--jito:#DC122E;--negro:#0b0c0e;--verde:#4FAC35;
+  --navy:#16244a;--amarillo:#FFC81E;--crema:#fff8ea;--cielo:#3aa7e8;--blanco:#fff;
+  --tinta:#0b0c0e;--fondo:#fff8ea;--carta:#fff;--suave:#5b5b5b;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--fondo:#14151a;--carta:#1f2129;--tinta:#f3f1ec;--crema:#14151a;--gris3:#2a2c35;--gris2:#3a3c46;--suave:#b7b5b0}}
+:root[data-theme="dark"]{--fondo:#14151a;--carta:#1f2129;--tinta:#f3f1ec;--crema:#14151a;--gris3:#2a2c35;--gris2:#3a3c46;--suave:#b7b5b0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Rubik,system-ui,sans-serif;background:var(--fondo);color:var(--tinta);font-size:16px;line-height:1.45;overflow-x:hidden}
+h1,h2,h3,.bun{font-family:Bungee,Rubik,sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.05}
+.pix{font-family:"Press Start 2P",monospace}
+b{font-weight:800}
+img{max-width:100%}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.checker{background:repeating-conic-gradient(#0b0c0e 0 25%,#fff 0 50%) 0 0/16px 16px}
+.checker.sm{background-size:10px 10px}
+.tag{display:inline-block;font-family:"Press Start 2P";font-size:9px;background:var(--negro);color:#fff;padding:5px 7px;line-height:1.2}
+.tag.r{background:var(--jito)}.tag.y{background:var(--amarillo);color:#0b0c0e}.tag.g{background:var(--verde)}.tag.n{background:var(--navy)}
+.box{border:3px solid var(--negro);border-radius:14px;background:var(--carta);padding:14px 16px;box-shadow:5px 5px 0 var(--negro)}
+:root[data-theme="dark"] .box,:root[data-theme="dark"] .card{box-shadow:5px 5px 0 #000}
+.box.y{background:var(--amarillo);color:#0b0c0e}.box.r{background:var(--jito);color:#fff}.box.n{background:var(--navy);color:#fff}
+.box h3{font-size:18px;margin-bottom:6px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.sm{font-size:14px}
+ul.k{list-style:none}
+ul.k li{padding-left:18px;position:relative;margin:5px 0}
+ul.k li:before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;background:var(--jito);transform:rotate(45deg)}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:#0b0c0e;color:#fff}
+.topbar .in{display:flex;align-items:center;gap:12px;height:58px}
+.topbar img{width:40px;height:40px}
+.topbar .nm{font-family:Bungee;font-size:15px;line-height:1;white-space:nowrap}
+.topbar .nm small{display:block;font-family:"Press Start 2P";font-size:8px;color:var(--amarillo);margin-top:4px}
+.minibar{flex:1;display:flex;align-items:center;gap:10px;min-width:0}
+.minibar .track{flex:1;height:14px;border:2px solid #fff;border-radius:8px;overflow:hidden;background:#2a2a2e}
+.minibar .fill{height:100%;width:0;background:repeating-linear-gradient(-45deg,var(--amarillo) 0 10px,#ffd95e 10px 20px);transition:width .5s}
+.minibar .pct{font-family:"Press Start 2P";font-size:11px;color:var(--amarillo);min-width:44px;text-align:right}
+.themebtn{background:none;border:2px solid #fff;color:#fff;border-radius:8px;width:36px;height:36px;font-size:16px;flex:none}
+.topbar .ck{height:8px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--jito);color:#fff;position:relative;overflow:hidden;border-bottom:4px solid #0b0c0e}
+.hero .rays{position:absolute;inset:-50%;background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(255,255,255,.08) 0 8deg,transparent 8deg 16deg);animation:spin 90s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .in{position:relative;display:grid;grid-template-columns:1.15fr 1fr;gap:24px;padding:34px 16px 90px;align-items:center}
+.hero .pre{font-family:"Press Start 2P";font-size:10px;background:#0b0c0e;display:inline-block;padding:7px 10px;margin-bottom:14px;line-height:1.5}
+.hero h1{font-size:clamp(52px,9vw,104px);line-height:.86;color:#fff;-webkit-text-stroke:3px #0b0c0e;paint-order:stroke fill;text-shadow:6px 6px 0 #0b0c0e}
+.hero h1 span{color:var(--amarillo)}
+.hero .sub{font-family:Bungee;font-size:clamp(14px,2.2vw,20px);margin-top:16px;color:#0b0c0e;background:var(--amarillo);display:inline-block;padding:5px 12px;transform:rotate(-2deg)}
+.hero p.intro{margin-top:18px;max-width:520px;font-weight:600;font-size:16px}
+.hero .logo{position:absolute;top:112px;right:0;width:112px;transform:rotate(8deg);filter:drop-shadow(5px 5px 0 rgba(0,0,0,.45))}
+.ringcard{background:#fff;color:#0b0c0e;border:4px solid #0b0c0e;border-radius:20px;box-shadow:8px 8px 0 #0b0c0e;padding:18px;display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center}
+.ring{position:relative;width:150px;height:150px}
+.ring svg{width:150px;height:150px;transform:rotate(-90deg)}
+.ring .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Bungee;font-size:36px;line-height:1}
+.ring .num small{font-family:"Press Start 2P";font-size:8px;color:var(--jito);margin-top:6px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;font-size:13px}
+.stat{display:flex;flex-direction:column;gap:3px}
+.stat .lb{display:flex;justify-content:space-between;font-weight:600}
+.stat .lb span:last-child{font-family:"Press Start 2P";font-size:9px;padding-top:3px}
+.stat .bar{height:8px;border-radius:5px;background:#e8e6e3;overflow:hidden;border:1.5px solid #0b0c0e}
+.stat .bar i{display:block;height:100%;width:0;background:var(--jito);transition:width .5s}
+.ringcard .acts{grid-column:1/-1;display:flex;gap:8px;flex-wrap:wrap;border-top:2px dashed #ccc;padding-top:12px}
+.btn{border:2.5px solid #0b0c0e;border-radius:10px;background:#fff;color:#0b0c0e;padding:7px 11px;font-weight:800;font-size:13px;box-shadow:3px 3px 0 #0b0c0e;display:inline-flex;align-items:center;gap:6px}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #0b0c0e}
+.btn.y{background:var(--amarillo)}.btn.r{background:var(--jito);color:#fff}.btn.n{background:var(--navy);color:#fff}
+.savenote{grid-column:1/-1;font-size:12px;color:#5b5b5b}
+/* road with kart */
+.road{position:absolute;left:0;right:0;bottom:0;height:62px;background:#2a2a2e;border-top:4px solid #0b0c0e}
+.road:before{content:"";position:absolute;left:0;right:0;top:27px;height:5px;background:repeating-linear-gradient(90deg,var(--amarillo) 0 34px,transparent 34px 68px)}
+.road .ck{position:absolute;right:60px;top:0;bottom:0;width:30px}
+.kartrun{position:absolute;bottom:14px;left:-140px;width:120px;animation:drive 11s linear infinite}
+.kartrun svg{width:120px;height:75px;animation:bump .35s ease-in-out infinite alternate}
+@keyframes drive{0%{left:-140px}70%{left:105%}100%{left:105%}}
+@keyframes bump{to{transform:translateY(-3px)}}
+.cubefloat{position:absolute;width:42px;animation:float 3s ease-in-out infinite alternate;opacity:.95}
+@keyframes float{to{transform:translateY(-14px) rotate(10deg)}}
+@media (prefers-reduced-motion:reduce){.hero .rays,.kartrun,.kartrun svg,.cubefloat{animation:none}.kartrun{left:20px}}
+
+/* ---------- nav ---------- */
+.nav{background:#0b0c0e;padding:10px 0}
+.nav .in{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.nav .in::-webkit-scrollbar{display:none}
+.nav a{flex:none;color:#fff;text-decoration:none;font-family:"Press Start 2P";font-size:9px;padding:9px 10px;border:2px solid #444;border-radius:8px}
+.nav a:hover{border-color:var(--amarillo);color:var(--amarillo)}
+
+/* ---------- sections ---------- */
+section.sec{padding:46px 0 10px}
+.shead{display:flex;align-items:flex-end;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.shead .n{font-family:Bungee;font-size:62px;line-height:.8;color:var(--jito);-webkit-text-stroke:2px var(--tinta)}
+.shead h2{font-size:clamp(28px,5vw,42px);line-height:.92}
+.shead .k{font-family:"Press Start 2P";font-size:9px;color:var(--jito);margin-bottom:8px}
+.shead .secpct{margin-left:auto;font-family:"Press Start 2P";font-size:10px;background:var(--negro);color:var(--amarillo);padding:8px 10px;border-radius:8px;border:2px solid var(--tinta)}
+.bar-ck{height:12px;margin:0 0 18px}
+.lead{font-size:17px;font-weight:600;margin-bottom:14px;max-width:820px}
+
+/* route */
+.route{display:grid;gap:12px}
+.rrow{display:grid;grid-template-columns:130px repeat(5,1fr);gap:8px}
+.rcls{background:var(--navy);color:#fff;border:3px solid var(--negro);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Bungee;font-size:22px;text-align:center;padding:8px}
+.rcls small{font-family:Rubik;font-weight:600;font-size:11px;color:var(--amarillo);margin-top:4px}
+.rcls .rp{font-family:"Press Start 2P";font-size:8px;margin-top:6px;color:#fff;opacity:.8}
+.cell{position:relative;text-align:left;background:var(--carta);color:var(--tinta);border:3px solid var(--negro);border-radius:12px;padding:10px 10px 10px 40px;min-height:94px;font-size:13px;line-height:1.25;transition:transform .15s,background .2s}
+.cell:hover{transform:translateY(-2px)}
+.cell .cb{position:absolute;left:10px;top:11px;width:22px;height:22px;border:3px solid var(--negro);border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center}
+.cell .cup{font-family:"Press Start 2P";font-size:7.5px;color:var(--suave);display:block;margin-bottom:5px;line-height:1.3}
+.cell .lab{font-family:"Press Start 2P";font-size:7.5px;color:var(--jito);display:block;margin-bottom:3px}
+.cell b{display:block;font-size:14px}
+.cell.hot{background:#fff3c4;color:#0b0c0e}
+.cell.hot .cup{color:#555}
+.cell.none .lab{color:var(--suave)}
+.cell.done{background:var(--verde);color:#fff;border-color:var(--negro)}
+.cell.done .lab,.cell.done .cup{color:#eaffdf}
+.cell.done .cb{background:var(--amarillo)}
+.cell.done .cb:after{content:"✓";font-weight:900;color:#0b0c0e;font-size:15px}
+.cell.done:before{content:"🏆";position:absolute;right:8px;bottom:6px;font-size:18px}
+.cell.locked{opacity:.55}
+.cell.locked .cb{background:var(--gris2)}
+.cell.locked:after{content:"🔒";position:absolute;right:8px;bottom:6px;font-size:14px}
+.rhead{display:grid;grid-template-columns:130px repeat(5,1fr);gap:8px}
+.rhead div{background:var(--negro);color:#fff;border-radius:10px;text-align:center;font-family:Bungee;font-size:13px;padding:8px 4px;display:flex;align-items:center;justify-content:center;gap:5px}
+.rhead div:first-child{background:var(--jito)}
+.rhead svg{width:20px;height:20px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px}
+.steps div{background:var(--carta);border:3px solid var(--negro);border-radius:12px;padding:30px 12px 12px;position:relative;font-size:14px}
+.steps div:before{content:attr(data-n);position:absolute;top:-14px;left:12px;width:36px;height:36px;border-radius:50%;background:var(--jito);color:#fff;border:3px solid var(--negro);font-family:Bungee;display:flex;align-items:center;justify-content:center;font-size:16px}
+.bonus{display:flex;gap:14px;align-items:center;margin-top:16px}
+.bonus.got{background:var(--verde);color:#fff}
+
+/* characters */
+.pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.pair{display:grid;grid-template-columns:62px 1fr;gap:12px;background:var(--carta);border:3px solid var(--negro);border-radius:14px;padding:12px;box-shadow:4px 4px 0 var(--negro);position:relative}
+.pair .ic{width:62px;height:62px;border-radius:12px;border:3px solid var(--negro);display:flex;align-items:center;justify-content:center}
+.pair h3{font-size:16px}
+.w{font-family:"Press Start 2P";font-size:7.5px;display:inline-block;padding:4px 5px;color:#fff;margin:5px 4px 4px 0}
+.w.L{background:var(--cielo)}.w.M{background:var(--verde)}.w.H{background:#0b0c0e;outline:1px solid #666}
+.pair p{font-size:14px}
+.pair .st{position:absolute;top:-11px;right:10px;font-family:"Press Start 2P";font-size:7.5px;padding:5px 6px;border:2px solid var(--negro)}
+.st.on{background:var(--verde);color:#fff}.st.off{background:var(--jito);color:#fff}
+.pair.secret{background:#fff3c4;color:#0b0c0e}
+.pair.lockd .ic{filter:grayscale(1) brightness(.5)}
+.pchips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.pchip{font-size:12px;font-weight:600;border:2px solid var(--negro);border-radius:20px;padding:2px 9px;background:var(--gris3)}
+.pchip.on{background:var(--verde);color:#fff}
+.pchip.off{opacity:.6}
+.pchip.off:before{content:"🔒 "}
+
+/* karts */
+.ktable{width:100%;border-collapse:collapse;font-size:14px;background:var(--carta);border:3px solid var(--negro);border-radius:14px;overflow:hidden}
+.ktable th{font-family:"Press Start 2P";font-size:8px;text-align:left;background:var(--negro);color:#fff;padding:10px}
+.ktable td{padding:8px 10px;border-bottom:1.5px solid var(--gris2)}
+.ktable tr.sep td{background:var(--navy);color:#fff;font-family:Bungee;font-size:15px;border:0}
+.ktable tr.sep td span{font-family:Rubik;font-size:12px;font-weight:600;color:var(--amarillo);margin-left:8px}
+.ktable td.u{font-weight:800}
+.ok,.lk{font-family:"Press Start 2P";font-size:7.5px;color:#fff;padding:4px 5px;white-space:nowrap}
+.ok{background:var(--verde)}.lk{background:var(--jito)}
+.kst{font-family:"Press Start 2P";font-size:7.5px;padding:5px 6px;border-radius:5px;white-space:nowrap}
+.kst.on{background:var(--verde);color:#fff}.kst.off{background:var(--gris2);color:var(--suave)}
+.ktable tr.got td.u:before{content:"✓ ";color:var(--verde)}
+.tscroll{overflow-x:auto;border-radius:14px}
+
+/* tracks */
+.cuphead{display:flex;align-items:center;gap:10px;margin:22px 0 10px}
+.cuphead svg.badge{width:48px;height:48px}
+.cuphead h3{font-size:22px}
+.cuphead .es{font-family:"Press Start 2P";font-size:8px;color:var(--jito);display:block;margin-top:5px;line-height:1.4}
+.tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.track{background:var(--carta);border:3px solid var(--negro);border-radius:12px;overflow:hidden;font-size:14px}
+.track .tt{background:#0b0c0e;color:#fff;padding:8px 10px 7px}
+.track .tt b{font-family:Bungee;font-weight:400;font-size:15px;display:block}
+.track .tt i{font-style:normal;font-size:12px;color:var(--amarillo);font-weight:600}
+.track svg{display:block;width:100%;height:90px;background:#efeeed}
+.track .bd{padding:8px 10px 10px}
+.laps{font-family:"Press Start 2P";font-size:7.5px;background:var(--jito);color:#fff;padding:4px 6px;display:inline-block;margin-bottom:6px}
+.spec{width:100%;border-collapse:collapse;font-size:14px}
+.spec td{padding:6px;border-bottom:1px solid var(--gris2);vertical-align:top}
+.spec td:first-child{font-family:"Press Start 2P";font-size:8px;color:var(--jito);width:38%;padding-top:8px;line-height:1.5}
+.box.n .spec td,.box.y .spec td{border-color:rgba(0,0,0,.15)}
+.haz{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px 18px;font-size:14px}
+
+/* shortcuts */
+.legend{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;font-size:14px}
+.sc{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.sci{background:var(--carta);border:3px solid var(--negro);border-radius:12px;padding:12px 14px;font-size:14px}
+.sci h3{font-size:16px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.sci h3 .r{display:flex;gap:6px;align-items:center}
+.sci .cnt{font-family:"Press Start 2P";font-size:8px;color:var(--suave)}
+.need{font-family:"Press Start 2P";font-size:7.5px;padding:4px 5px;color:#fff;background:var(--verde);white-space:nowrap}
+.need.m{background:var(--jito)}.need.t{background:var(--navy)}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:7px 6px;border-radius:8px;cursor:pointer;user-select:none}
+.chk:hover{background:var(--gris3)}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .bx{flex:none;width:22px;height:22px;border:3px solid var(--tinta);border-radius:6px;margin-top:1px;display:flex;align-items:center;justify-content:center;background:var(--carta)}
+.chk input:checked+.bx{background:var(--verde);border-color:var(--negro)}
+.chk input:checked+.bx:after{content:"✓";color:#fff;font-weight:900;font-size:14px}
+.chk input:checked~.tx{text-decoration:line-through;text-decoration-color:var(--verde);text-decoration-thickness:2px;opacity:.7}
+.chk input:focus-visible+.bx{outline:3px solid var(--cielo);outline-offset:2px}
+.sci.full{border-color:var(--verde);box-shadow:0 0 0 3px var(--verde) inset}
+
+/* tech */
+.tech{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.tc{background:var(--carta);border:3px solid var(--negro);border-radius:14px;padding:14px;box-shadow:4px 4px 0 var(--negro);font-size:15px}
+.tc .hd{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.tc .hd svg{width:44px;height:44px;flex:none}
+.tc h3{font-size:16px}
+.tc .lvl{font-family:"Press Start 2P";font-size:7.5px;color:var(--jito)}
+
+/* trivia */
+.facts{columns:2 340px;column-gap:16px}
+.fact{break-inside:avoid;background:var(--carta);border:3px solid var(--negro);border-radius:12px;padding:12px 12px 12px 58px;margin-bottom:14px;position:relative;font-size:15px}
+.fact .n{position:absolute;left:10px;top:12px;width:36px;height:36px;border-radius:9px;background:var(--jito);color:#fff;font-family:Bungee;font-size:15px;display:flex;align-items:center;justify-content:center;border:2.5px solid var(--negro)}
+.fact.y{background:var(--amarillo);color:#0b0c0e}.fact.n2{background:var(--navy);color:#fff}
+.fact h3{font-size:15px;margin-bottom:3px}
+.big{font-family:Bungee;font-size:42px;line-height:.95}
+
+/* quiz & retos */
+.q{background:var(--carta);border:3px solid var(--negro);border-radius:12px;padding:12px 14px;margin-bottom:12px;font-size:15px}
+.q .qt b{font-family:Bungee;font-weight:400;color:var(--jito);margin-right:5px}
+.q .opts{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.q .opts button{border:2.5px solid var(--negro);background:var(--gris3);color:var(--tinta);border-radius:20px;padding:5px 12px;font-size:14px;font-weight:600}
+.q .opts button.right{background:var(--verde);color:#fff}
+.q .opts button.wrong{background:var(--jito);color:#fff;text-decoration:line-through}
+.q .fb{font-size:13px;margin-top:6px;font-weight:600;min-height:1em}
+.quizscore{font-family:"Press Start 2P";font-size:10px;margin-bottom:12px;color:var(--jito)}
+.reto{display:flex;gap:12px;align-items:flex-start;background:var(--carta);border:3px dashed var(--tinta);border-radius:12px;padding:11px 12px;margin-bottom:12px;font-size:15px;cursor:pointer;position:relative}
+.reto input{position:absolute;opacity:0}
+.reto .pts{font-family:Bungee;background:#0b0c0e;color:var(--amarillo);border-radius:8px;padding:6px;font-size:14px;text-align:center;min-width:58px;line-height:1}
+.reto .pts small{display:block;font-family:"Press Start 2P";font-size:6.5px;color:#fff;margin-top:4px}
+.reto h3{font-size:15px}
+.reto .bx{margin-left:auto;flex:none;width:26px;height:26px;border:3px solid var(--tinta);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.reto.on{border-style:solid;border-color:var(--negro);background:var(--verde);color:#fff}
+.reto.on .bx{background:var(--amarillo);border-color:var(--negro)}
+.reto.on .bx:after{content:"✓";color:#0b0c0e;font-weight:900}
+.retotot{font-family:"Press Start 2P";font-size:10px;margin-bottom:12px;color:var(--jito)}
+
+/* records */
+.rec{width:100%;border-collapse:collapse;font-size:14px;background:var(--carta)}
+.rec th{font-family:"Press Start 2P";font-size:8px;background:var(--jito);color:#fff;padding:10px;text-align:left}
+.rec td{padding:6px 8px;border-bottom:1px solid var(--gris2)}
+.rec tr.cupr td{background:var(--gris3);font-family:Bungee;font-size:13px}
+.rec input{width:100%;min-width:96px;font:600 14px Rubik;border:2px solid var(--gris2);background:var(--fondo);color:var(--tinta);border-radius:7px;padding:6px 8px}
+.rec input:focus{outline:none;border-color:var(--jito)}
+.rec input.t{font-family:"Press Start 2P";font-size:10px}
+
+footer{background:#0b0c0e;color:#fff;margin-top:60px;padding:30px 0 0}
+footer .in{display:flex;gap:20px;align-items:center;flex-wrap:wrap;padding-bottom:26px}
+footer img{width:120px}
+footer .h{font-family:Bungee;font-size:28px;color:var(--amarillo)}
+footer a{color:var(--amarillo)}
+footer .legal{font-family:"Press Start 2P";font-size:8px;color:#999;line-height:1.8;margin-top:10px}
+
+/* toast + confetti */
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(220%);visibility:hidden;background:#0b0c0e;color:#fff;border:3px solid var(--amarillo);border-radius:12px;padding:11px 16px;font-weight:700;z-index:100;transition:transform .3s,visibility .3s;max-width:92vw;text-align:center}
+.toast.show{transform:translateX(-50%) translateY(0);visibility:visible}
+.confetti{position:fixed;top:-20px;width:10px;height:14px;z-index:99;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+
+@media (max-width:860px){
+  .hero .in{grid-template-columns:1fr;padding-top:26px}
+  .hero .logo{width:96px;top:62px;right:0}
+  .rhead{display:none}
+  .rrow{grid-template-columns:1fr 1fr}
+  .rcls{grid-column:1/-1;flex-direction:row;gap:10px;justify-content:flex-start;font-size:18px}
+  .rcls small,.rcls .rp{margin-top:0}
+  .rcls .rp{margin-left:auto}
+}
+@media (max-width:520px){
+  .ringcard{grid-template-columns:1fr;justify-items:center}
+  .stats{width:100%}
+  .topbar .nm small{display:none}
+  .topbar .nm{font-size:12px}
+  .shead .n{font-size:48px}
+  .shead .secpct{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="tomakart" viewBox="0 0 420 260">
+   <ellipse cx="210" cy="238" rx="175" ry="14" fill="rgba(0,0,0,.28)"/>
+   <g stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".9"><line x1="4" y1="120" x2="70" y2="120"/><line x1="18" y1="152" x2="64" y2="152"/><line x1="0" y1="186" x2="56" y2="186"/></g>
+   <g transform="translate(140,46)">
+    <circle cx="40" cy="60" r="42" fill="#c50f28" stroke="#0b0c0e" stroke-width="6"/>
+    <path d="M22 12c10 6 26 6 36 0l-6 16-12-8-12 8z" fill="#4FAC35" stroke="#0b0c0e" stroke-width="5" stroke-linejoin="round"/>
+    <ellipse cx="22" cy="52" rx="7" ry="11" fill="#fff" opacity=".85"/>
+    <circle cx="52" cy="60" r="5" fill="#0b0c0e"/><circle cx="70" cy="60" r="5" fill="#0b0c0e"/>
+    <path d="M10 80 q-26 -10 -30 -40" stroke="#0b0c0e" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="-46" y="-6" width="34" height="34" rx="7" fill="#FFC81E" stroke="#0b0c0e" stroke-width="5" transform="rotate(-12 -29 11)"/>
+    <path d="M-29 -1l4 9 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z" fill="#fff" stroke="#0b0c0e" stroke-width="2.5" transform="rotate(-12 -29 11)"/>
+   </g>
+   <g transform="translate(232,20)">
+    <circle cx="62" cy="86" r="64" fill="#DC122E" stroke="#0b0c0e" stroke-width="7"/>
+    <path d="M30 14c18 10 46 10 64 0l-10 26-22-14-22 14z" fill="#4FAC35" stroke="#0b0c0e" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M60 14 q2-12 14-18" stroke="#0b0c0e" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="28" cy="78" rx="10" ry="17" fill="#fff" opacity=".9"/>
+    <rect x="52" y="66" width="70" height="30" rx="14" fill="#16244a" stroke="#0b0c0e" stroke-width="6"/>
+    <circle cx="72" cy="81" r="9" fill="#9fd6ff"/><circle cx="104" cy="81" r="9" fill="#9fd6ff"/>
+    <path d="M72 114 q18 14 38 0" stroke="#0b0c0e" stroke-width="6" fill="none" stroke-linecap="round"/>
+   </g>
+   <path d="M70 150 h250 q38 0 52 22 l18 18 q6 10-6 14 H86 q-26 0-30-22z" fill="#0b0c0e"/>
+   <path d="M84 156 h232 q30 0 44 20 l10 12 H96 q-16 0-20-14z" fill="#E62523"/>
+   <rect x="120" y="164" width="140" height="10" rx="5" fill="#FFC81E"/>
+   <text x="190" y="196" text-anchor="middle" font-family="Bungee" font-size="15" fill="#fff">CC</text>
+   <path d="M300 150 l26-36" stroke="#0b0c0e" stroke-width="8" stroke-linecap="round"/>
+   <ellipse cx="330" cy="110" rx="9" ry="20" fill="#929090" stroke="#0b0c0e" stroke-width="5" transform="rotate(30 330 110)"/>
+   <path d="M64 168 l-30-10 14 14-22 4 22 6-12 12 30-14z" fill="#FFC81E" stroke="#0b0c0e" stroke-width="4" stroke-linejoin="round"/>
+   <g stroke="#0b0c0e" stroke-width="7"><circle cx="120" cy="208" r="30" fill="#2a2a2e"/><circle cx="120" cy="208" r="12" fill="#929090"/><circle cx="330" cy="208" r="30" fill="#2a2a2e"/><circle cx="330" cy="208" r="12" fill="#929090"/></g>
+  </symbol>
+  <symbol id="cube" viewBox="0 0 60 60">
+   <rect x="6" y="6" width="48" height="48" rx="10" fill="#FFC81E" stroke="#0b0c0e" stroke-width="4"/>
+   <rect x="11" y="11" width="16" height="7" rx="3" fill="#fff" opacity=".7"/>
+   <path d="M30 17l4 9 10 1-8 7 3 10-9-6-9 6 3-10-8-7 10-1z" fill="#fff" stroke="#0b0c0e" stroke-width="3" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="trophy" viewBox="0 0 60 64">
+   <path d="M16 6h28v14c0 10-6 18-14 18S16 30 16 20z" fill="#FFC81E" stroke="#0b0c0e" stroke-width="4"/>
+   <path d="M16 10H6c0 10 4 15 11 16M44 10h10c0 10-4 15-11 16" fill="none" stroke="#0b0c0e" stroke-width="4"/>
+   <rect x="25" y="38" width="10" height="10" fill="#FFC81E" stroke="#0b0c0e" stroke-width="4"/>
+   <rect x="15" y="48" width="30" height="10" rx="3" fill="#0b0c0e"/>
+   <rect x="21" y="10" width="5" height="14" rx="2" fill="#fff" opacity=".6"/>
+  </symbol>
+  <symbol id="b-mush" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" stroke="#0b0c0e" stroke-width="4"/><path d="M8 25c0-10 7-16 16-16s16 6 16 16z" fill="#DC122E" stroke="#0b0c0e" stroke-width="3"/><circle cx="18" cy="17" r="3.2" fill="#fff"/><circle cx="30" cy="18" r="3.2" fill="#fff"/><rect x="17" y="25" width="14" height="12" rx="4" fill="#fff8ea" stroke="#0b0c0e" stroke-width="3"/></symbol>
+  <symbol id="b-flower" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" stroke="#0b0c0e" stroke-width="4"/><g fill="#FFC81E" stroke="#0b0c0e" stroke-width="2.5"><circle cx="24" cy="14" r="6"/><circle cx="33" cy="21" r="6"/><circle cx="30" cy="31" r="6"/><circle cx="18" cy="31" r="6"/><circle cx="15" cy="21" r="6"/></g><circle cx="24" cy="23" r="5" fill="#E62523" stroke="#0b0c0e" stroke-width="2.5"/></symbol>
+  <symbol id="b-star" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" stroke="#0b0c0e" stroke-width="4"/><path d="M24 9l4.5 9.5 10.5 1.2-7.8 7.2 2.2 10.4L24 32l-9.4 5.3 2.2-10.4L9 19.7l10.5-1.2z" fill="#FFC81E" stroke="#0b0c0e" stroke-width="3" stroke-linejoin="round"/></symbol>
+  <symbol id="b-special" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" stroke="#0b0c0e" stroke-width="4"/><path d="M10 33l3-17 7 8 4-11 4 11 7-8 3 17z" fill="#16244a" stroke="#0b0c0e" stroke-width="3" stroke-linejoin="round"/><circle cx="24" cy="27" r="3" fill="#FFC81E"/></symbol>
+  <symbol id="b-all" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" stroke="#0b0c0e" stroke-width="4"/><g transform="translate(9 9) scale(.5)"><use href="#trophy" width="60" height="64"/></g></symbol>
+ </defs>
+</svg>
+
+<header class="topbar">
+ <div class="wrap in">
+  <img src="logo.png" alt="Compass Catchup">
+  <div class="nm">Double Dash!!<small>GUIA AL 100%</small></div>
+  <div class="minibar" aria-label="Progreso total"><div class="track"><div class="fill" id="miniFill"></div></div><span class="pct" id="miniPct">0%</span></div>
+  <button class="themebtn" id="themeBtn" title="Cambiar tema" aria-label="Cambiar tema claro u oscuro">◐</button>
+ </div>
+ <div class="ck checker sm"></div>
+</header>
+
+<div class="hero">
+ <div class="rays"></div>
+ <svg class="cubefloat" style="left:46%;top:30px" viewBox="0 0 60 60"><use href="#cube"/></svg>
+ <svg class="cubefloat" style="left:6%;bottom:90px;width:30px;animation-delay:-1.4s" viewBox="0 0 60 60"><use href="#cube"/></svg>
+ <div class="wrap in">
+  <div style="position:relative">
+   <img class="logo" src="logo.png" alt="">
+   <div class="pre">EDICION ESPECIAL · RECOMP PC · @compasscatchup</div>
+   <h1>DOUBLE<br><span>DASH!!</span></h1>
+   <div class="sub">Dos pilotos · un kart · cero frenos</div>
+   <p class="intro">La guía de desbloqueos de Compass Catchup, ahora interactiva. Palomea cada oro, cada atajo y cada reto: tu porcentaje se guarda solito en este navegador.</p>
+  </div>
+  <div class="ringcard">
+   <div class="ring">
+    <svg viewBox="0 0 150 150"><circle cx="75" cy="75" r="62" fill="none" stroke="#e8e6e3" stroke-width="16"/><circle id="ringFg" cx="75" cy="75" r="62" fill="none" stroke="#DC122E" stroke-width="16" stroke-linecap="round" stroke-dasharray="389.56" stroke-dashoffset="389.56" style="transition:stroke-dashoffset .6s"/><circle cx="75" cy="75" r="62" fill="none" stroke="#0b0c0e" stroke-width="2" opacity=".15"/></svg>
+    <div class="num"><span id="ringPct">0%</span><small>TOTAL</small></div>
+   </div>
+   <div class="stats" id="stats"></div>
+   <div class="acts">
+    <button class="btn y" id="expBtn" title="Descarga un archivo con tu progreso">⬇ Exportar</button>
+    <button class="btn" id="impBtn" title="Carga un archivo de progreso">⬆ Importar</button>
+    <button class="btn r" id="rstBtn">↺ Reiniciar</button>
+    <input type="file" id="impFile" accept="application/json,.json" hidden>
+   </div>
+   <div class="savenote" id="saveNote">Tu progreso se guarda automáticamente en este navegador.</div>
+  </div>
+ </div>
+ <div class="road"><div class="ck checker sm"></div><div class="kartrun"><svg viewBox="0 0 420 260"><use href="#tomakart"/></svg></div></div>
+</div>
+
+<nav class="nav"><div class="wrap in">
+ <a href="#ruta">01 Ruta Dorada</a><a href="#pilotos">02 Pilotos</a><a href="#garaje">03 Garaje</a><a href="#pistas">04 Pistas</a><a href="#atajos">05 Atajos</a><a href="#escuela">06 Escuela</a><a href="#curiosidades">07 Curiosidades</a><a href="#zona">08 Zona Compass</a><a href="#records">09 Récords</a>
+</div></nav>
+
+<main class="wrap">
+
+<!-- RUTA -->
+<section class="sec" id="ruta">
+ <div class="shead"><div class="n">01</div><div><div class="k">DESBLOQUEOS</div><h2>La Ruta Dorada</h2></div><div class="secpct" id="pct-ruta">0/20</div></div>
+ <div class="bar-ck checker sm"></div>
+ <p class="lead">Todo se gana en <b>Grand Prix</b> quedando en <b>1.er lugar (trofeo de oro)</b>. Toca cada casilla cuando consigas el oro: los pilotos, karts y arenas de las siguientes secciones se desbloquean solos.</p>
+ <div class="route">
+  <div class="rhead"><div>CC</div><div><svg><use href="#b-mush"/></svg>Champiñón</div><div><svg><use href="#b-flower"/></svg>Flor</div><div><svg><use href="#b-star"/></svg>Estrella</div><div><svg><use href="#b-special"/></svg>Especial</div><div><svg><use href="#b-all"/></svg>Todas</div></div>
+  <div id="routeRows" style="display:grid;gap:10px"></div>
+ </div>
+ <div class="box y bonus" id="bonusBox">
+  <svg width="54" height="58" style="flex:none"><use href="#trophy"/></svg>
+  <div><b class="bun" style="font-weight:400">Bonus del 100%:</b> <span id="bonusTxt">consigue el oro en las 20 casillas (incluyendo Todas las Copas en 50cc y 100cc, que no dan nada por sí solas) y cambia el fondo de la pantalla de título.</span></div>
+ </div>
+ <h3 style="font-size:20px;margin-top:28px">Orden recomendado</h3>
+ <div class="steps">
+  <div data-n="1"><b>50cc: Champiñón, Flor, Estrella.</b> Tres karts fáciles y aprendes las pistas sin presión.</div>
+  <div data-n="2"><b>100cc completo.</b> Estrella abre la Copa Especial; ganarla trae a Toad y Toadette. Regresa a 50cc por el Bullet Blaster.</div>
+  <div data-n="3"><b>150cc completo + Todas las Copas.</b> La Especial abre el maratón de 16 pistas; ganarlo abre el Espejo.</div>
+  <div data-n="4"><b>Espejo.</b> Estrella trae a Petey y King Boo. Remata con Todas las Copas en espejo por el Parade Kart.</div>
+ </div>
+ <p class="sm" style="margin-top:14px;color:var(--suave)">En Grand Prix cooperativo de dos jugadores, el oro cuenta si cualquiera de los dos queda primero. Las casillas con 🔒 todavía no están disponibles en el juego, pero puedes palomearlas igual si ya las tienes.</p>
+</section>
+
+<!-- PILOTOS -->
+<section class="sec" id="pilotos">
+ <div class="shead"><div class="n">02</div><div><div class="k">20 PILOTOS · 10 PAREJAS</div><h2>Pilotos</h2></div><div class="secpct" id="pct-pilotos">0/20</div></div>
+ <div class="bar-ck checker sm"></div>
+ <p class="lead">Cada pareja "oficial" comparte un <b>objeto especial</b> que solo ellos pueden sacar. Si mezclas pilotos de parejas distintas, tu kart puede sacar <b>los dos</b> especiales. Peso: <span class="w L">LIGERO</span> <span class="w M">MEDIANO</span> <span class="w H">PESADO</span></p>
+ <div class="pairs" id="pairs"></div>
+ <div class="box" style="margin-top:18px;background:#e6f4df;color:#0b0c0e"><b class="bun" style="font-weight:400">Truco de pareja:</b> el piloto de atrás es quien sostiene y lanza los objetos. Cambia de posición (Z en el control de GameCube, o lo que tengas mapeado) para tener al dueño del especial atrás. Cada personaje conserva su objeto al intercambiar.</div>
+</section>
+
+<!-- GARAJE -->
+<section class="sec" id="garaje">
+ <div class="shead"><div class="n">03</div><div><div class="k">8 DE INICIO · 13 SECRETOS</div><h2>El garaje</h2></div><div class="secpct" id="pct-garaje">0/21</div></div>
+ <div class="bar-ck checker sm"></div>
+ <p class="lead">Regla de oro del peso: <b>nadie puede subirse a un kart más chico que él</b>. Ligeros y medianos pueden usar karts más grandes si su pareja cabe; los pesados solo van en karts pesados. El <b>Parade Kart</b> lo usa cualquiera.</p>
+ <div class="tscroll"><table class="ktable" id="ktable"></table></div>
+</section>
+
+<!-- PISTAS -->
+<section class="sec" id="pistas">
+ <div class="shead"><div class="n">04</div><div><div class="k">16 PISTAS · 4 COPAS · 6 ARENAS</div><h2>Pistas</h2></div></div>
+ <div class="bar-ck checker sm"></div>
+ <p class="lead">Casi todas son a 3 vueltas. Las excepciones: <b>Baby Park</b> (7 vueltas) y <b>Wario Colosseum</b> (2). Las cuatro de la Copa Especial están bloqueadas hasta ganar la Copa Estrella en 100cc. Los nombres en español son los de la versión europea; en tu recomp probablemente aparezcan en inglés.</p>
+ <div id="cups"></div>
+ <div class="box" style="margin-top:22px"><h3>Peligros de pista: quién es quién</h3>
+  <div class="haz">
+   <div><b>Chomp Cadenas</b> · se lanza a lo que pase cerca. Luigi y Mario Circuit.</div>
+   <div><b>Cataquack</b> · pato que te avienta por los aires. Peach Beach.</div>
+   <div><b>Pokey</b> · cactus en segmentos que bloquea el camino. Dry Dry Desert.</div>
+   <div><b>Coche champiñón / bomba</b> · uno da turbo, el otro explota. Puente y Ciudad.</div>
+   <div><b>Freezie</b> · bloque de hielo que te congela al tocarlo. Sherbet Land.</div>
+   <div><b>Thwomp</b> · bloque que cae con ritmo fijo. Bowser's Castle.</div>
+   <div><b>Planta de fuego</b> · escupe bolas de fuego. Waluigi Stadium.</div>
+   <div><b>Géiser</b> · te avienta hacia arriba. Dino Dino Jungle.</div>
+  </div>
+ </div>
+ <div class="shead" style="margin-top:30px"><div><div class="k">MODO BATALLA</div><h2 style="font-size:30px">Arenas</h2></div><div class="secpct" id="pct-arenas">0/6</div></div>
+ <div class="grid2">
+  <div class="box"><table class="spec" id="arenas"></table></div>
+  <div class="box n">
+   <h3 style="color:var(--amarillo)">Tres juegos de batalla</h3>
+   <ul class="k">
+    <li><b>Batalla de globos:</b> revienta los globos rivales, protege los tuyos.</li>
+    <li><b>Ladrón de Shine:</b> agarra el Shine Sprite y aguanta con él hasta que acabe el reloj.</li>
+    <li><b>Bob-omb Blast:</b> solo hay Bob-ombs. Gana quien acumule más impactos.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- ATAJOS -->
+<section class="sec" id="atajos">
+ <div class="shead"><div class="n">05</div><div><div class="k">CORTES Y RUTAS ALTERNAS</div><h2>Atajos</h2></div><div class="secpct" id="pct-atajos">0/0</div></div>
+ <div class="bar-ck checker sm"></div>
+ <div class="legend"><span class="need">LIBRE</span> no necesitas nada <span class="need m">CHAMPIÑÓN</span> pasto, tierra o arena frenan: úsalo justo al entrar <span class="need t">TÉCNICO</span> requiere práctica</div>
+ <p class="lead">Palomea cada atajo cuando ya lo domines. <b>Practícalos en Contrarreloj</b>: ahí traes champiñones y nadie te avienta nada.</p>
+ <div class="sc" id="sc"></div>
+ <div class="box r" style="margin-top:18px;display:flex;gap:14px;align-items:center">
+  <svg width="54" height="54" style="flex:none"><use href="#cube"/></svg>
+  <div><b class="bun" style="font-weight:400;font-size:16px">Truco general del cubo:</b> en las copas, guarda tu champiñón para el atajo de esa pista en vez de usarlo en la recta. Con dos pilotos puedes cargar <b>dos objetos</b>: uno para atacar y otro para el corte.</div>
+ </div>
+</section>
+
+<!-- ESCUELA -->
+<section class="sec" id="escuela">
+ <div class="shead"><div class="n">06</div><div><div class="k">TRUCOS Y TECNICAS</div><h2>Escuela de manejo</h2></div><div class="secpct" id="pct-escuela">0/8</div></div>
+ <div class="bar-ck checker sm"></div>
+ <p class="lead">Palomea cada técnica cuando ya te salga sin pensarlo.</p>
+ <div class="tech" id="tech"></div>
+ <div class="box y" style="margin-top:18px"><b class="bun" style="font-weight:400">Calibración rápida:</b> los botones aquí son los del control de GameCube. Si en el recomp remapeaste a un control de Xbox o PlayStation, ubica primero tu "Z" (cambio) y tu "objeto" antes de entrar a 150cc.</div>
+</section>
+
+<!-- CURIOSIDADES -->
+<section class="sec" id="curiosidades">
+ <div class="shead"><div class="n">07</div><div><div class="k">DATOS PARA EL EPISODIO</div><h2>Curiosidades</h2></div></div>
+ <div class="bar-ck checker sm"></div>
+ <div class="grid3" style="margin-bottom:18px">
+  <div class="box r" style="text-align:center"><div class="big" style="color:#fff">~7 M</div><span class="sm">copias vendidas en el mundo (cifra reportada en 2009)</span></div>
+  <div class="box y" style="text-align:center"><div class="big" style="color:var(--jito)">#2</div><span class="sm">juego más vendido de GameCube, solo detrás de Smash Bros. Melee</span></div>
+  <div class="box n" style="text-align:center"><div class="big" style="color:var(--amarillo)">7 sem.</div><span class="sm">para llegar a 1 millón vendido: el GameCube más rápido hasta ese momento</span></div>
+ </div>
+ <div class="facts">
+  <div class="fact"><span class="n">1</span><h3>Debut de siete segundos</h3>El juego se presentó en el E3 2001 con un clip de apenas siete segundos, cuando todavía se llamaba solo "Mario Kart".</div>
+  <div class="fact"><span class="n">2</span><h3>El doble piloto llegó tarde</h3>El nombre <i>Double Dash!!</i> se reveló hasta abril de 2003, y la mecánica de dos pilotos por kart se integró poco antes del E3 de ese año.</div>
+  <div class="fact y"><span class="n">3</span><h3>¿Donkey Kong Jr.?</h3>En los archivos quedan un retrato sin usar y nombres internos "dk_jr": todo indica que DK Jr. iba a ser piloto antes de que Diddy Kong tomara su lugar.</div>
+  <div class="fact"><span class="n">4</span><h3>Pistas con dedicatoria</h3>Internamente, Baby Park, Mushroom Bridge, Mushroom City y Dino Dino Jungle tienen nombres asociados a Bebé Luigi, Koopa, Paratroopa y Diddy Kong.</div>
+  <div class="fact"><span class="n">5</span><h3>El caparazón amarillo</h3>El caparazón azul con picos tiene un nombre interno que lo llama "caparazón amarillo": quizá su diseño original era otro.</div>
+  <div class="fact n2"><span class="n">6</span><h3 style="color:var(--amarillo)">Se fue el "escape del plátano"</h3>El equipo quitó la mecánica para salvarte de un plátano, para acortar la distancia entre veteranos y novatos.</div>
+  <div class="fact"><span class="n">7</span><h3>Fantasmas con iniciales</h3>Los fantasmas del staff en Contrarreloj guardan iniciales como "EAD" que el juego nunca muestra.</div>
+  <div class="fact"><span class="n">8</span><h3>Arenas fantasma</h3>Hay dos espacios de arenas de batalla sin usar, y Tilt-a-Kart revisa el ID de un curso de prueba eliminado.</div>
+  <div class="fact y"><span class="n">9</span><h3>Un cañón que nunca llegó</h3>Bowser's Castle tiene una risa de Bowser sin usar ligada a un objeto cañón. Tal vez hubo un cañón planeado ahí.</div>
+  <div class="fact"><span class="n">10</span><h3>Disco de regalo</h3>En América, la preventa traía un Bonus Disc con demos de F-Zero GX, Mario Party 5 y Sonic Heroes, entre otros.</div>
+  <div class="fact"><span class="n">11</span><h3>De vuelta en otros Mario Kart</h3>Varias pistas regresaron como retro: Sherbet Land en Mario Kart 8, Daisy Cruiser en Mario Kart 7, Peach Beach y DK Mountain en Mario Kart Wii.</div>
+  <div class="fact"><span class="n">12</span><h3>Nota de crítica</h3>Promedia 87 en Metacritic y Nintendo Power le dio calificación perfecta. Hubo críticas al modo de un jugador por corto, pero el co-op lo hizo leyenda.</div>
+ </div>
+ <div class="box" style="margin-top:6px"><h3>Ficha técnica</h3>
+  <table class="spec">
+   <tr><td>LANZAMIENTO</td><td>Japón 7 nov 2003 · Europa 14 nov · América 17 nov 2003</td></tr>
+   <tr><td>ESTUDIO</td><td>Nintendo EAD</td></tr>
+   <tr><td>PRODUCCION</td><td>Shigeru Miyamoto, Takashi Tezuka, Shinya Takahashi, Tadashi Sugiyama</td></tr>
+   <tr><td>MUSICA</td><td>Shinobu Tanaka y Kenta Nagata</td></tr>
+   <tr><td>MODOS</td><td>Grand Prix, Contrarreloj, Versus, Batalla</td></tr>
+   <tr><td>LAN</td><td>Hasta 16 pilotos (8 parejas)</td></tr>
+  </table>
+ </div>
+</section>
+
+<!-- ZONA -->
+<section class="sec" id="zona">
+ <div class="shead"><div class="n">08</div><div><div class="k">QUIZ · RETOS · COMBOS</div><h2>Zona Compass</h2></div><div class="secpct" id="pct-retos">0/6</div></div>
+ <div class="bar-ck checker sm"></div>
+ <div class="grid2">
+  <div>
+   <h3 style="font-size:22px;margin-bottom:6px">Quiz de pits 🍅</h3>
+   <div class="quizscore" id="quizScore">0/6 CORRECTAS</div>
+   <div id="quiz"></div>
+   <button class="btn" id="quizReset" style="margin-top:4px">↺ Repetir quiz</button>
+  </div>
+  <div>
+   <h3 style="font-size:22px;margin-bottom:6px">Retos para el crew</h3>
+   <div class="retotot" id="retoPts">0 / 1500 PTS</div>
+   <div id="retos"></div>
+  </div>
+ </div>
+ <h3 style="font-size:22px;margin:24px 0 12px">Combos de la casa</h3>
+ <div class="grid3">
+  <div class="box"><span class="tag r">AGRESIVO</span><h3 style="margin-top:8px">Mario + Bowser Jr.</h3>Bolas de fuego al frente y caparazón gigante para limpiar la recta. Kart mediano.</div>
+  <div class="box"><span class="tag n">DEFENSIVO</span><h3 style="margin-top:8px">Peach + Koopa</h3>Corazón para atrapar ataques y triple caparazón girando como escudo. Difícil de tumbar.</div>
+  <div class="box y"><span class="tag">CAOS TOTAL</span><h3 style="margin-top:8px">Petey + King Boo</h3>Ruleta de especiales: nunca sabes qué sale. Ideal para Baby Park con el crew.</div>
+ </div>
+</section>
+
+<!-- RECORDS -->
+<section class="sec" id="records">
+ <div class="shead"><div class="n">09</div><div><div class="k">CONTRARRELOJ</div><h2>Hoja de récords</h2></div></div>
+ <div class="bar-ck checker sm"></div>
+ <p class="lead">Escribe tus mejores tiempos: también se guardan en este navegador. Formato sugerido 1:23.456.</p>
+ <div class="tscroll box" style="padding:0"><table class="rec" id="rec"></table></div>
+ <div class="box n" style="margin-top:20px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+  <img src="logo.png" alt="" style="width:90px">
+  <div style="flex:1;min-width:240px"><h3 style="color:var(--amarillo)">¿Ya desbloqueaste todo?</h3>
+  <p>Mándanos captura de tu progreso o tu mejor tiempo de Contrarreloj y etiquétanos: <b>@compasscatchup</b> en todas las redes. Los mejores tiempos del crew se leen al aire en el próximo episodio.</p></div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap in">
+  <img src="logo.png" alt="Compass Catchup">
+  <div style="flex:1;min-width:260px">
+   <div class="h">@compasscatchup</div>
+   <p>El chatcast retro en español. Disponible en Spotify y Apple Podcasts.</p>
+   <p class="legal">GUIA HECHA POR FANS, SIN AFILIACION CON NINTENDO. MARIO KART: DOUBLE DASH!! Y SUS PERSONAJES SON MARCAS DE NINTENDO. ILUSTRACIONES ORIGINALES DE COMPASS CATCHUP.</p>
+  </div>
+ </div>
+ <div class="checker" style="height:20px"></div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+"use strict";
+var KEY="cc-mkdd-progreso-v1";
+var state={c:{},rec:{},quiz:{}};
+var storageOK=true;
+function load(){try{var raw=localStorage.getItem(KEY);if(raw){var d=JSON.parse(raw);state.c=d.c||{};state.rec=d.rec||{};state.quiz=d.quiz||{};}}catch(e){storageOK=false;}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){storageOK=false;document.getElementById("saveNote").textContent="Este navegador no permite guardar (modo privado o almacenamiento bloqueado): tu progreso se perderá al cerrar.";}}
+function on(id){return !!state.c[id];}
+function esc(s){return String(s).replace(/[&<>"]/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m];});}
+
+/* ===== DATA ===== */
+var CLASSES=[{id:"50",n:"50cc",s:"CALENTAMIENTO"},{id:"100",n:"100cc",s:"LA LLAVE"},{id:"150",n:"150cc",s:"EN SERIO"},{id:"esp",n:"Espejo",s:"EL JEFE FINAL"}];
+var CUPS=[{id:"mush",n:"Champiñón"},{id:"flower",n:"Flor"},{id:"star",n:"Estrella"},{id:"special",n:"Especial"},{id:"all",n:"Todas las Copas"}];
+var R={
+ "50-mush":{l:"KART",b:"Green Fire",d:"de Luigi"},"50-flower":{l:"KART",b:"Bloom Coach",d:"de Daisy"},"50-star":{l:"KART",b:"Para-Wing",d:"de Paratroopa"},"50-special":{l:"KART",b:"Bullet Blaster",d:"de Bowser Jr."},"50-all":{l:"SIN PREMIO",b:"Solo cuenta",d:"para el 100%",none:1},
+ "100-mush":{l:"KART",b:"Rattle Buggy",d:"de Bebé Luigi"},"100-flower":{l:"KART",b:"Waluigi Racer",d:"de Waluigi"},"100-star":{l:"COPA",b:"Copa Especial",d:"se abre en todas las cc",hot:1},"100-special":{l:"PILOTOS + KART",b:"Toad & Toadette",d:"+ Toad Kart",hot:1},"100-all":{l:"SIN PREMIO",b:"Solo cuenta",d:"para el 100%",none:1},
+ "150-mush":{l:"ARENA",b:"Luigi's Mansion",d:"batalla"},"150-flower":{l:"KART",b:"Turbo Birdo",d:"de Birdo"},"150-star":{l:"KART",b:"Barrel Train",d:"de Diddy Kong"},"150-special":{l:"MODO",b:"Todas las Copas",d:"(All-Cup Tour)",hot:1},"150-all":{l:"MODO",b:"Modo Espejo",d:"(Mirror)",hot:1},
+ "esp-mush":{l:"KART",b:"Toadette Kart",d:"de Toadette"},"esp-flower":{l:"ARENA",b:"Tilt-a-Kart",d:"batalla"},"esp-star":{l:"PILOTOS + KART",b:"Petey & King Boo",d:"+ Piranha Pipes",hot:1},"esp-special":{l:"KART",b:"Boo Pipes",d:"de King Boo"},"esp-all":{l:"KART",b:"Parade Kart",d:"el kart para todos",hot:1}
+};
+var TROPHIES=[];CLASSES.forEach(function(c){CUPS.forEach(function(u){TROPHIES.push("t-"+c.id+"-"+u.id);});});
+/* availability in-game (para el candado visual) */
+function available(cls,cup){
+ if(cls==="esp"&&!on("t-150-all"))return false;
+ if(cup==="special"&&!on("t-100-star"))return false;
+ if(cup==="all"&&!on("t-150-special"))return false;
+ return true;
+}
+var KARTS=[
+ {g:"Ligeros",gs:"Aceleran rápido, salen volando si los tocan"},
+ {n:"Goo-Goo Buggy",o:"Bebé Mario"},{n:"Rattle Buggy",o:"Bebé Luigi",t:"100-mush"},{n:"Koopa Dasher",o:"Koopa Troopa"},{n:"Para-Wing",o:"Paratroopa",t:"50-star"},{n:"Barrel Train",o:"Diddy Kong",t:"150-star"},{n:"Bullet Blaster",o:"Bowser Jr.",t:"50-special"},{n:"Toad Kart",o:"Toad",t:"100-special"},{n:"Toadette Kart",o:"Toadette",t:"esp-mush"},
+ {g:"Medianos",gs:"El balance de siempre"},
+ {n:"Red Fire",o:"Mario"},{n:"Green Fire",o:"Luigi",t:"50-mush"},{n:"Heart Coach",o:"Peach"},{n:"Bloom Coach",o:"Daisy",t:"50-flower"},{n:"Turbo Yoshi",o:"Yoshi"},{n:"Turbo Birdo",o:"Birdo",t:"150-flower"},
+ {g:"Pesados",gs:"Velocidad final y empujones"},
+ {n:"DK Jumbo",o:"Donkey Kong"},{n:"Koopa King",o:"Bowser"},{n:"Wario Car",o:"Wario"},{n:"Waluigi Racer",o:"Waluigi",t:"100-flower"},{n:"Piranha Pipes",o:"Petey Piranha",t:"esp-star"},{n:"Boo Pipes",o:"King Boo",t:"esp-special"},
+ {g:"Especial",gs:"Para cualquier pareja"},
+ {n:"Parade Kart",o:"Todos",t:"esp-all"}
+];
+var CL={"50":"50cc","100":"100cc","150":"150cc","esp":"ESPEJO"};
+var CUPN={mush:"Copa Champiñón",flower:"Copa Flor",star:"Copa Estrella",special:"Copa Especial",all:"Todas las Copas"};
+function tLabel(t){var p=t.split("-");return [CL[p[0]],CUPN[p[1]]];}
+var PAIRS=[
+ {n:"Mario & Luigi",w:[["M","MEDIANOS"]],p:["Mario","Luigi"],it:"<b>Bolas de fuego:</b> un abanico de fuego que rebota por la pista. Excelente para limpiar el camino de enfrente.",bg:"#E62523",ic:'<circle cx="20" cy="20" r="13" fill="#FFC81E" stroke="#0b0c0e" stroke-width="3"/><path d="M14 22c4-8 8-8 12 0" fill="none" stroke="#E62523" stroke-width="4"/>'},
+ {n:"Donkey Kong & Diddy Kong",w:[["H","DK PESADO"],["L","DIDDY LIGERO"]],p:["Donkey Kong","Diddy Kong"],it:"<b>Plátano gigante:</b> al pisarlo se parte en tres plátanos normales. Trampa de zona.",bg:"#8a5a2b",ic:'<path d="M8 28c6-2 14-10 18-20 4 6 2 18-8 22-4 1-8 0-10-2z" fill="#FFC81E" stroke="#0b0c0e" stroke-width="3"/>'},
+ {n:"Peach & Daisy",w:[["M","MEDIANAS"]],p:["Peach","Daisy"],it:"<b>Corazón:</b> escudo que atrapa objetos que te lanzan… y te los quedas para usarlos.",bg:"#ff7fb0",ic:'<path d="M20 32 6 18a7 7 0 0 1 14-6 7 7 0 0 1 14 6z" fill="#E62523" stroke="#0b0c0e" stroke-width="3"/>'},
+ {n:"Yoshi & Birdo",w:[["M","MEDIANOS"]],p:["Yoshi","Birdo"],it:"<b>Huevo de Yoshi / de Birdo:</b> persigue al de adelante como caparazón rojo y suelta objetos al romperse.",bg:"#1f7a3a",ic:'<ellipse cx="20" cy="22" rx="11" ry="13" fill="#fff" stroke="#0b0c0e" stroke-width="3"/><circle cx="16" cy="18" r="3" fill="#4FAC35"/><circle cx="24" cy="26" r="3" fill="#4FAC35"/>'},
+ {n:"Wario & Waluigi",w:[["H","PESADOS"]],p:["Wario","Waluigi"],it:"<b>Bob-omb:</b> se lanza y explota con radio enorme. Atrás funciona como mina.",bg:"#ffd966",ic:'<circle cx="20" cy="22" r="12" fill="#0b0c0e"/><rect x="18" y="5" width="4" height="7" fill="#0b0c0e"/><path d="M22 6l5-3" stroke="#E62523" stroke-width="3"/><circle cx="16" cy="19" r="2.5" fill="#fff"/>'},
+ {n:"Bowser & Bowser Jr.",w:[["H","BOWSER PESADO"],["L","JR. LIGERO"]],p:["Bowser","Bowser Jr."],it:"<b>Caparazón de Bowser:</b> un caparazón gigante que arrasa con todo lo que toca.",bg:"#4FAC35",ic:'<path d="M8 26a12 12 0 0 1 24 0z" fill="#E62523" stroke="#0b0c0e" stroke-width="3"/><path d="M8 26h24" stroke="#0b0c0e" stroke-width="3"/><path d="M14 18l2-5 2 5M22 18l2-5 2 5" fill="#fff" stroke="#0b0c0e" stroke-width="2"/>'},
+ {n:"Bebé Mario & Bebé Luigi",w:[["L","LIGEROS"]],p:["Bebé Mario","Bebé Luigi"],it:"<b>Chomp Cadenas:</b> te jala como lancha y se come a quien se cruce. Remontada pura.",bg:"#9fd6ff",ic:'<circle cx="20" cy="20" r="12" fill="#0b0c0e"/><circle cx="16" cy="17" r="3" fill="#fff"/><circle cx="24" cy="17" r="3" fill="#fff"/><path d="M14 25h12" stroke="#fff" stroke-width="2"/><path d="M30 12l5-4" stroke="#0b0c0e" stroke-width="3"/>'},
+ {n:"Koopa & Paratroopa",w:[["L","LIGEROS"]],p:["Koopa Troopa","Paratroopa"],it:"<b>Triple caparazón:</b> tres verdes o tres rojos girando alrededor del kart. Escudo y munición.",bg:"#16244a",ic:'<g stroke="#0b0c0e" stroke-width="2.5"><circle cx="12" cy="24" r="6" fill="#4FAC35"/><circle cx="20" cy="16" r="6" fill="#4FAC35"/><circle cx="28" cy="24" r="6" fill="#E62523"/></g>'},
+ {n:"Toad & Toadette",w:[["L","LIGEROS"]],p:["Toad","Toadette"],t:"100-special",it:"<b>Champiñón dorado:</b> turbos ilimitados por unos segundos. Se ganan en <b>100cc Copa Especial</b>.",bg:"#fff",ic:'<path d="M10 30c0-14 4-18 10-18s10 4 10 18z" fill="#FFC81E" stroke="#0b0c0e" stroke-width="3"/><circle cx="20" cy="12" r="8" fill="#E62523" stroke="#0b0c0e" stroke-width="3"/><circle cx="17" cy="10" r="2" fill="#fff"/>'},
+ {n:"Petey Piranha & King Boo",w:[["H","PESADOS"]],p:["Petey Piranha","King Boo"],t:"esp-star",it:"<b>Comodín:</b> pueden sacar <b>cualquier</b> objeto especial del juego. Se ganan en <b>Espejo Copa Estrella</b>.",bg:"#0b0c0e",ic:'<path d="M10 28c0-12 4-18 10-18s10 6 10 18l-4-3-3 3-3-3-3 3-3-3z" fill="#fff" stroke="#929090" stroke-width="2"/><path d="M13 9l3 4 4-5 4 5 3-4v6H13z" fill="#FFC81E"/><circle cx="17" cy="18" r="2" fill="#0b0c0e"/><circle cx="23" cy="18" r="2" fill="#0b0c0e"/>'}
+];
+var ARENAS=[["COOKIE LAND","Una galleta gigante. Arena redonda y abierta."],["BLOCK CITY","Cuadrícula de calles con bloques de colores."],["PIPE PLAZA","Varios niveles conectados por tubos."],["NINTENDO GAMECUBE","Con forma de la consola, en varios pisos."],["LUIGI'S MANSION","Se gana en 150cc Copa Champiñón.","150-mush"],["TILT-A-KART","Plataforma que se inclina. Se gana en Espejo Copa Flor.","esp-flower"]];
+var TRACKCUPS=[
+ {id:"mush",n:"Copa Champiñón",es:"MUSHROOM CUP · DISPONIBLE DESDE EL INICIO",tr:[
+  ["luigi","Luigi Circuit","Circuito Luigi",3,"Óvalo de bienvenida con turbos en las curvas y un Chomp Cadenas encadenado junto a la pista.",'<rect x="25" y="12" width="110" height="34" rx="17" fill="none" stroke="#0b0c0e" stroke-width="7"/><rect x="25" y="12" width="110" height="34" rx="17" fill="none" stroke="#FFC81E" stroke-width="2" stroke-dasharray="6 6"/>'],
+  ["peach","Peach Beach","Playa Peach",3,"Playa con marea que sube y baja, y Cataquacks que mandan volando a quien los toca.",'<rect width="160" height="58" fill="#9fd6ff"/><path d="M0 40 q20-8 40 0 t40 0 t40 0 t40 0V58H0z" fill="#3aa7e8"/><path d="M20 30 C40 6,120 6,140 30 S60 54,20 30" fill="none" stroke="#0b0c0e" stroke-width="6"/>'],
+  ["baby","Baby Park","Parque Bebé",7,"Un óvalo diminuto con montaña rusa al centro. Caos garantizado: los objetos nunca se van.",'<rect x="38" y="14" width="84" height="30" rx="15" fill="none" stroke="#0b0c0e" stroke-width="8"/><circle cx="80" cy="29" r="8" fill="#E62523"/>'],
+  ["desert","Dry Dry Desert","Desierto Seco Seco",3,"Pokeys, tornados y un remolino de arena movediza al centro que se traga a los distraídos.",'<rect width="160" height="58" fill="#f6dca0"/><path d="M110 46l18-30 18 30z" fill="#e0b25a" stroke="#0b0c0e" stroke-width="3"/><path d="M14 40 L40 16 L70 34 L100 14" fill="none" stroke="#0b0c0e" stroke-width="6" stroke-linejoin="round"/>']]},
+ {id:"flower",n:"Copa Flor",es:"FLOWER CUP · DISPONIBLE DESDE EL INICIO",tr:[
+  ["bridge","Mushroom Bridge","Puente Champiñón",3,"Carretera con tráfico: coches champiñón (te dan turbo) y coches bomba (te revientan).",'<path d="M10 44 Q80 0 150 44" fill="none" stroke="#929090" stroke-width="5"/><line x1="10" y1="44" x2="150" y2="44" stroke="#0b0c0e" stroke-width="7"/><rect x="50" y="36" width="18" height="10" rx="3" fill="#E62523" stroke="#0b0c0e" stroke-width="2"/>'],
+  ["mario","Mario Circuit","Circuito Mario",3,"Circuito clásico junto al castillo, con Goombas en el camino y otro Chomp Cadenas suelto.",'<path d="M20 40 C20 10,70 10,80 28 S140 50,140 22" fill="none" stroke="#0b0c0e" stroke-width="7"/><rect x="128" y="8" width="20" height="14" fill="#fff" stroke="#0b0c0e" stroke-width="2"/><path d="M128 8l10-7 10 7" fill="#E62523" stroke="#0b0c0e" stroke-width="2"/>'],
+  ["daisy","Daisy Cruiser","Crucero Daisy",3,"Un crucero de lujo: comedor con mesas que se deslizan, alberca y bodega de carga.",'<rect width="160" height="58" fill="#3aa7e8"/><path d="M20 30h120l-14 18H34z" fill="#fff" stroke="#0b0c0e" stroke-width="3"/><rect x="60" y="14" width="40" height="16" fill="#FFC81E" stroke="#0b0c0e" stroke-width="3"/>'],
+  ["waluigi","Waluigi Stadium","Estadio Waluigi",3,"Estadio de tierra tipo motocross, con saltos enormes y plantas de fuego.",'<rect width="160" height="58" fill="#8a5a2b"/><path d="M20 44 q15-30 30 0 t30 0 t30 0 t30 0" fill="none" stroke="#0b0c0e" stroke-width="6"/><circle cx="80" cy="18" r="7" fill="#E62523"/>']]},
+ {id:"star",n:"Copa Estrella",es:"STAR CUP · DISPONIBLE DESDE EL INICIO",tr:[
+  ["sherbet","Sherbet Land","Tierra Sorbete",3,"Pista de hielo resbalosa, con Freezies que te congelan y Shy Guys patinando.",'<rect width="160" height="58" fill="#dff3ff"/><path d="M20 34 C20 12,140 12,140 34 S20 56,20 34" fill="none" stroke="#3aa7e8" stroke-width="7"/><path d="M76 20l4-8 4 8z" fill="#fff" stroke="#0b0c0e" stroke-width="2"/>'],
+  ["city","Mushroom City","Ciudad Champiñón",3,"Ciudad de noche con tráfico y varias rutas por calles y callejones.",'<rect width="160" height="58" fill="#16244a"/><g fill="#FFC81E"><rect x="10" y="20" width="16" height="30"/><rect x="34" y="10" width="16" height="40"/><rect x="110" y="16" width="18" height="34"/><rect x="134" y="26" width="16" height="24"/></g><path d="M56 46h48M80 46V18" stroke="#fff" stroke-width="5"/>'],
+  ["yoshi","Yoshi Circuit","Circuito Yoshi",3,"Vista desde el aire, el trazado tiene la silueta de Yoshi. Muchas curvas cerradas.",'<path d="M30 40 q-10-24 20-26 q10-10 24 0 q30 0 40 10 q20 4 14 18 q-40 12-98-2z" fill="#4FAC35" stroke="#0b0c0e" stroke-width="4"/>'],
+  ["dk","DK Mountain","Montaña DK",3,"Un cañón de barril te dispara a la cima; luego bajada con rocas rodando.",'<path d="M10 54l50-46 50 46z" fill="#8a5a2b" stroke="#0b0c0e" stroke-width="3"/><path d="M90 54l30-28 30 28z" fill="#6b4420" stroke="#0b0c0e" stroke-width="3"/><path d="M20 50 q30-50 48-42" fill="none" stroke="#FFC81E" stroke-width="3" stroke-dasharray="4 4"/>']]},
+ {id:"special",n:"Copa Especial",es:"SPECIAL CUP · GANA 100cc COPA ESTRELLA",tr:[
+  ["colosseum","Wario Colosseum","Coliseo Wario",2,"La pista más larga del juego: rampas, espirales y tramos sin barandal.",'<ellipse cx="80" cy="30" rx="60" ry="20" fill="none" stroke="#0b0c0e" stroke-width="6"/><ellipse cx="80" cy="30" rx="38" ry="11" fill="none" stroke="#FFC81E" stroke-width="4"/>'],
+  ["dino","Dino Dino Jungle","Jungla Dino Dino",3,"Selva con dinosaurios gigantes caminando sobre la pista y géiseres que te avientan.",'<rect width="160" height="58" fill="#cfe9c4"/><path d="M40 50V30q0-14 16-14h24q10 0 10-10" fill="none" stroke="#1f7a3a" stroke-width="8" stroke-linecap="round"/><path d="M14 46 Q80 20 146 46" fill="none" stroke="#0b0c0e" stroke-width="5"/>'],
+  ["bowser","Bowser's Castle","Castillo de Bowser",3,"Lava, Thwomps, bolas de fuego y caminos angostos. Cuidado con cada orilla.",'<rect width="160" height="58" fill="#3a1010"/><path d="M0 44 q20-10 40 0 t40 0 t40 0 t40 0V58H0z" fill="#E62523"/><rect x="60" y="8" width="40" height="30" fill="#929090" stroke="#0b0c0e" stroke-width="3"/>'],
+  ["rainbow","Rainbow Road","Senda Arco Iris",3,"El gran final sobre una ciudad nocturna: turbos encadenados y tramos sin barreras.",'<rect width="160" height="58" fill="#0b0c0e"/><g fill="#fff"><circle cx="20" cy="12" r="1.5"/><circle cx="140" cy="8" r="1.5"/><circle cx="110" cy="48" r="1.5"/></g><path d="M10 44 C50 4,110 4,150 40" fill="none" stroke="#E62523" stroke-width="3"/><path d="M10 48 C50 8,110 8,150 44" fill="none" stroke="#FFC81E" stroke-width="3"/><path d="M10 52 C50 12,110 12,150 48" fill="none" stroke="#4FAC35" stroke-width="3"/><path d="M10 56 C50 16,110 16,150 52" fill="none" stroke="#3aa7e8" stroke-width="3"/>']]}
+];
+var SC={
+ luigi:["LIBRE","",["Antes del Chomp Cadenas hay un camino alterno a la derecha. Ojo: el Chomp todavía te alcanza.","En las rectas con túnel, otra desviación a la derecha casi idéntica.","Toca los turbos de las curvas siempre que puedas."]],
+ peach:["MAREA","m",["Al entrar a la zona de playa, a la izquierda hay un corte por la arena. Solo conviene con marea baja: con marea alta el agua te frena.","En la primera curva, a la izquierda, un túnel con caja doble.","En la loma final con cajas rodando, a la izquierda hay otra caja doble."]],
+ baby:["LIBRE","",["No hay atajo: el secreto es la línea interior pegada a la barda sin atorarte.","Encadena mini-turbos en cada curva: son dos curvas por vuelta, por 7 vueltas.","Guarda un objeto atrás como escudo: aquí todo lo que se avienta regresa."]],
+ desert:["CHAMPIÑÓN","m",["Saliendo del zigzag inicial, corta por la tierra a tu derecha con champiñón.","En la última curva cerrada, pasa por debajo del letrero de la derecha.","Las torres a nivel del suelo sirven como rampas. Las arenas movedizas, solo con estrella."]],
+ bridge:["CHAMPIÑÓN","m",["Justo después de la meta, gira a la derecha: camino secreto con caja doble.","Saliendo del primer túnel, sigue derecho con champiñón para cruzar la tierra y caer a la loma.","El arco del puente se puede manejar. Choca coches champiñón para turbo gratis; esquiva los bomba."]],
+ mario:["CHAMPIÑÓN","m",["En la primera vuelta en U a la izquierda, corta por el pasto con champiñón.","Si golpeas un Goomba, te da un champiñón: úsalo en el siguiente corte de pasto."]],
+ daisy:["LIBRE","",["En la primera escalera, gira cerrado a la derecha y rodea la alberca.","El hueco en el pasillo está dentro de la pista: déjate caer y hay caja doble abajo.","En el comedor, lee el movimiento de las mesas antes de entrar."]],
+ waluigi:["CHAMPIÑÓN","m",["Antes de la primera loma de velocidad, ve a la izquierda de la loma y usa champiñón.","En la zona de obstáculos puedes pasar por encima de las plantas falsas.","En los saltos grandes, haz mini-turbo antes de la rampa para no quedarte corto."]],
+ sherbet:["LIBRE","",["Cerca del final, en la zona de los Freezies, se puede saltar por detrás de la torre de la izquierda y reincorporarte a la pista. Pruébalo en Contrarreloj primero.","En hielo, frena el drift antes: el kart patina más de lo que crees."]],
+ city:["CHAMPIÑÓN","m",["En el primer cruce de tres caminos, sigue derecho y luego a la derecha: pasaje secreto.","Cerca del final, en vez de meterte al tráfico, sigue derecho. Es lodo: lleva champiñón.","Igual que en el puente: coches champiñón sí, coches bomba no."]],
+ yoshi:["CHAMPIÑÓN","m",["Después de la segunda curva, sigue derecho y usa champiñón para brincar un hueco grande. Ahorra un par de segundos.","Saliendo del túnel de la \"nariz\", usa champiñón en el risco que sobresale para entrar a un túnel subterráneo."]],
+ dk:["TÉCNICO","t",["En el vuelo del cañón, arriba/abajo cambia el ángulo del kart: aterriza recto para no perder velocidad.","Después de la curva de las rocas: frena, avanza lento derecho, sube un poco la loma de pasto, da una vuelta en U corta y rápida, y saltas un cerro completo."]],
+ colosseum:["LIBRE","",["Donde normalmente rodeas el círculo por la izquierda o la derecha para llegar a la rampa de turbo, sigue derecho.","Son solo 2 vueltas pero muy largas: tómala con calma en los tramos sin barandal."]],
+ dino:["CHAMPIÑÓN","m",["Después de la primera cueva, ve a la derecha en vez de subir al puente: hay un puente con turbo. Mantén el control.","En la cueva principal, a la derecha con champiñón cruzas un puente de troncos.","Los pies de los dinosaurios y los géiseres te sacan de la línea: anticípalos."]],
+ bowser:["LIBRE","",["En la sección de las bolas de fuego, sigue derecho para brincarte una vuelta en U completa.","Los Thwomps caen con ritmo: obsérvalos una vez y memoriza el patrón."]],
+ rainbow:["LIBRE","",["No hay grandes cortes: la carrera se gana encadenando cada turbo sin perder el control.","Excelente pista para practicar esquivar caparazones rojos: suelta un plátano atrás en el momento justo."]]
+};
+var TECH=[
+ ["NIVEL 1","Arranque turbo",'<rect x="12" y="2" width="16" height="36" rx="6" fill="#0b0c0e"/><circle cx="20" cy="10" r="4.5" fill="#E62523"/><circle cx="20" cy="20" r="4.5" fill="#E62523"/><circle cx="20" cy="30" r="4.5" fill="#4FAC35"/>',"Pisa el acelerador justo cuando el semáforo cambia a verde, no antes. Si te adelantas, te quemas. En cooperativo, si <b>ambos</b> jugadores lo hacen al mismo tiempo, el turbo de salida es más fuerte: el verdadero \"Double Dash\"."],
+ ["NIVEL 2","Mini-turbo",'<path d="M6 32 Q6 8 34 8" fill="none" stroke="#888" stroke-width="5"/><g fill="#3aa7e8"><circle cx="10" cy="20" r="3"/><circle cx="15" cy="13" r="3"/><circle cx="22" cy="9" r="3"/></g>',"Entra a la curva derrapando con el gatillo y, mientras derrapas, <b>mueve la palanca de lado a lado</b>. Las chispas pasan de amarillas a <b>azules</b>: suelta el derrape en ese momento y sales disparado."],
+ ["NIVEL 2","Cambio de pilotos",'<path d="M8 14h20l-5-5M32 26H12l5 5" fill="none" stroke="#888" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>',"Con <b>Z</b> (control de GameCube) los pilotos se intercambian: el de atrás pasa a manejar. Los objetos viajan con cada personaje. Úsalo para poner al dueño del especial atrás."],
+ ["NIVEL 2","Escudo trasero",'<path d="M8 26c6-2 14-10 18-20 4 6 2 18-8 22-4 1-8 0-10-2z" fill="#FFC81E" stroke="#0b0c0e" stroke-width="3"/><path d="M30 30l6 6" stroke="#E62523" stroke-width="4"/>',"Mantén presionado el botón de objeto con un plátano o caparazón y se queda colgando atrás del kart: bloquea caparazones rojos que vienen por ti."],
+ ["NIVEL 3","Rebufo",'<g stroke="#888" stroke-width="3" stroke-linecap="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="8" y1="20" x2="24" y2="20"/><line x1="4" y1="28" x2="20" y2="28"/></g><circle cx="31" cy="20" r="6" fill="#E62523" stroke="#0b0c0e" stroke-width="3"/>',"Pégate justo detrás de otro kart en una recta. Cuando aparecen líneas de aire alrededor, recibes un empujón de velocidad. Perfecto para rebasar al final de una recta."],
+ ["NIVEL 3 · CO-OP","Robo de objetos",'<path d="M6 22h12M22 22h12" stroke="#888" stroke-width="4"/><path d="M16 16l6 6-6 6" fill="none" stroke="#E62523" stroke-width="4"/><rect x="26" y="12" width="12" height="12" rx="3" fill="#FFC81E" stroke="#0b0c0e" stroke-width="2.5"/>',"En cooperativo, si el de atrás va con las manos vacías, puede <b>robarle el objeto</b> a un rival al chocar de costado con el botón de hombro. Coordina con tu copiloto."],
+ ["ESTRATEGIA","Mezcla parejas",'<path d="M20 4l4 10h10l-8 6 3 10-9-6-9 6 3-10-8-6h10z" fill="#FFC81E" stroke="#0b0c0e" stroke-width="3" stroke-linejoin="round"/>',"Dos pilotos de parejas distintas te dan acceso a <b>dos</b> objetos especiales. Ejemplo: Mario + Bowser Jr. = bolas de fuego y caparazón gigante."],
+ ["PARA EL CREW","Noche de LAN",'<rect x="4" y="10" width="14" height="10" rx="2" fill="#929090" stroke="#0b0c0e" stroke-width="2.5"/><rect x="22" y="10" width="14" height="10" rx="2" fill="#929090" stroke="#0b0c0e" stroke-width="2.5"/><path d="M11 20v8h18v-8M20 28v6" stroke="#888" stroke-width="3" fill="none"/>',"El original soportaba LAN de hasta 16 pilotos en 8 parejas. Si el recomp o la comunidad le meten juego en red, el crew completo cabe en una sola carrera."]
+];
+var QUIZ=[
+ ["¿Cuántas vueltas tiene Baby Park?",["3","5","7"],2],
+ ["¿Qué copa abre la Copa Especial?",["50cc Flor","100cc Estrella","150cc Estrella"],1],
+ ["¿Qué objeto especial es de Peach y Daisy?",["Corazón","Huevo","Bob-omb"],0],
+ ["¿Qué kart lo puede usar cualquier pareja?",["Koopa King","Parade Kart","Boo Pipes"],1],
+ ["¿A quién reemplazó Diddy Kong en el desarrollo?",["Donkey Kong Jr.","Funky Kong","Cranky Kong"],0],
+ ["¿Cuál es la pista de solo 2 vueltas?",["Rainbow Road","DK Mountain","Wario Colosseum"],2]
+];
+var RETOS=[
+ [100,"Bebés al poder","Gana Rainbow Road en 150cc con Bebé Mario y Bebé Luigi en el Goo-Goo Buggy."],
+ [150,"Cero objetos","Termina una copa de 100cc en el podio sin usar un solo objeto. Solo manejo."],
+ [200,"El cañón perfecto","Completa el salto del cerro en DK Mountain tres vueltas seguidas en Contrarreloj."],
+ [250,"Ladrón profesional","En co-op, roba 5 objetos en una sola carrera."],
+ [300,"Espejo sin rasguños","Gana la Copa Especial en Espejo quedando 1.º en las cuatro pistas."],
+ [500,"Garaje completo","Desbloquea los 21 karts del garaje y presume la pantalla de título alterna."]
+];
+
+/* ===== RENDER ===== */
+function el(id){return document.getElementById(id);}
+var routeRows=el("routeRows");
+CLASSES.forEach(function(c){
+ var row=document.createElement("div");row.className="rrow";
+ row.innerHTML='<div class="rcls">'+c.n+'<small>'+c.s+'</small><span class="rp" id="rp-'+c.id+'">0/5</span></div>';
+ CUPS.forEach(function(u){
+  var k=c.id+"-"+u.id,r=R[k];
+  var b=document.createElement("button");b.type="button";b.className="cell"+(r.hot?" hot":"")+(r.none?" none":"");b.dataset.id="t-"+k;
+  b.setAttribute("aria-pressed","false");
+  b.innerHTML='<span class="cb"></span><span class="cup">'+c.n.toUpperCase()+' · '+esc(u.n.toUpperCase())+'</span><span class="lab">'+r.l+'</span><b>'+esc(r.b)+'</b>'+esc(r.d);
+  b.addEventListener("click",function(){toggle("t-"+k);});
+  row.appendChild(b);
+ });
+ routeRows.appendChild(row);
+});
+
+var pairsEl=el("pairs");
+PAIRS.forEach(function(p,i){
+ var d=document.createElement("div");d.className="pair"+(p.t?" secret":"");d.id="pair-"+i;
+ d.innerHTML='<div class="ic" style="background:'+p.bg+'"><svg width="40" height="40" viewBox="0 0 40 40">'+p.ic+'</svg></div><div><h3>'+p.n+'</h3>'+p.w.map(function(w){return '<span class="w '+w[0]+'">'+w[1]+'</span>';}).join("")+'<p>'+p.it+'</p><div class="pchips">'+p.p.map(function(x){return '<span class="pchip">'+x+'</span>';}).join("")+'</div></div>'+(p.t?'<span class="st"></span>':'');
+ pairsEl.appendChild(d);
+});
+
+var kt='<tr><th>KART</th><th>PILOTO</th><th>COMO SE CONSIGUE</th><th>ESTADO</th></tr>';
+KARTS.forEach(function(k,i){
+ if(k.g){kt+='<tr class="sep"><td colspan="4">'+k.g+'<span>'+k.gs+'</span></td></tr>';return;}
+ var how=k.t?(function(){var l=tLabel(k.t);return '<span class="lk">'+l[0]+'</span> '+l[1];})():'<span class="ok">INICIO</span>';
+ kt+='<tr id="kart-'+i+'"><td class="u">'+k.n+'</td><td>'+k.o+'</td><td>'+how+'</td><td><span class="kst"></span></td></tr>';
+});
+el("ktable").innerHTML=kt;
+
+var cupsEl=el("cups"),badge={mush:"b-mush",flower:"b-flower",star:"b-star",special:"b-special"};
+TRACKCUPS.forEach(function(cu){
+ var h='<div class="cuphead"><svg class="badge"><use href="#'+badge[cu.id]+'"/></svg><div><h3>'+cu.n+'</h3><span class="es">'+cu.es+'</span></div></div><div class="tracks">';
+ cu.tr.forEach(function(t){h+='<div class="track"><div class="tt"><b>'+t[1]+'</b><i>'+t[2]+'</i></div><svg viewBox="0 0 160 58" preserveAspectRatio="xMidYMid meet">'+t[5]+'</svg><div class="bd"><span class="laps">'+t[3]+' VUELTAS</span><br>'+t[4]+'</div></div>';});
+ cupsEl.insertAdjacentHTML("beforeend",h+'</div>');
+});
+el("arenas").innerHTML=ARENAS.map(function(a,i){return '<tr id="arena-'+i+'"><td>'+a[0]+'</td><td>'+a[1]+' <span class="kst"></span></td></tr>';}).join("");
+
+/* shortcuts */
+var scEl=el("sc"),SCIDS=[];
+TRACKCUPS.forEach(function(cu){cu.tr.forEach(function(t){
+ var s=SC[t[0]],box=document.createElement("div");box.className="sci";box.id="sci-"+t[0];
+ var h='<h3>'+t[1]+'<span class="r"><span class="cnt" id="cnt-'+t[0]+'"></span><span class="need '+s[1]+'">'+s[0]+'</span></span></h3>';
+ s[2].forEach(function(txt,i){var id="s-"+t[0]+"-"+i;SCIDS.push(id);h+='<label class="chk"><input type="checkbox" data-id="'+id+'"><span class="bx"></span><span class="tx">'+esc(txt)+'</span></label>';});
+ box.innerHTML=h;scEl.appendChild(box);
+});});
+el("tech").innerHTML=TECH.map(function(t,i){return '<div class="tc"><div class="hd"><svg viewBox="0 0 40 40">'+t[2]+'</svg><div><span class="lvl">'+t[0]+'</span><h3>'+t[1]+'</h3></div></div><p>'+t[3]+'</p><label class="chk" style="margin-top:8px;border-top:2px dashed var(--gris2);padding-top:9px"><input type="checkbox" data-id="e-'+i+'"><span class="bx"></span><span class="tx"><b>Ya la domino</b></span></label></div>';}).join("");
+var TECHIDS=TECH.map(function(_,i){return "e-"+i;});
+
+/* retos */
+el("retos").innerHTML=RETOS.map(function(r,i){return '<label class="reto" id="reto-'+i+'"><input type="checkbox" data-id="r-'+i+'"><div class="pts">'+r[0]+'<small>PTS</small></div><div><h3>'+r[1]+'</h3>'+r[2]+'</div><span class="bx"></span></label>';}).join("");
+var RETOIDS=RETOS.map(function(_,i){return "r-"+i;});
+
+/* quiz */
+function renderQuiz(){
+ el("quiz").innerHTML=QUIZ.map(function(q,i){
+  var ans=state.quiz[i];
+  return '<div class="q"><div class="qt"><b>'+(i+1)+'.</b>'+q[0]+'</div><div class="opts">'+q[1].map(function(o,j){var cls="";if(ans!==undefined){if(j===q[2])cls="right";else if(j===ans)cls="wrong";}return '<button type="button" class="'+cls+'" data-q="'+i+'" data-o="'+j+'"'+(ans!==undefined?' disabled':'')+'>'+o+'</button>';}).join("")+'</div><div class="fb">'+(ans===undefined?"":(ans===q[2]?"✅ ¡Correcto!":"❌ Era: "+q[1][q[2]]))+'</div></div>';
+ }).join("");
+ var ok=0;QUIZ.forEach(function(q,i){if(state.quiz[i]===q[2])ok++;});
+ el("quizScore").textContent=ok+"/6 CORRECTAS"+(Object.keys(state.quiz).length===6?(ok===6?" · ¡PERFECTO!":" · ¿REVANCHA?"):"");
+}
+el("quiz").addEventListener("click",function(e){var b=e.target.closest("button[data-q]");if(!b)return;state.quiz[b.dataset.q]=+b.dataset.o;save();renderQuiz();});
+el("quizReset").addEventListener("click",function(){state.quiz={};save();renderQuiz();});
+
+/* records */
+var rh='<tr><th>PISTA</th><th>MEJOR VUELTA</th><th>TOTAL</th><th>PAREJA / KART</th></tr>';
+TRACKCUPS.forEach(function(cu){rh+='<tr class="cupr"><td colspan="4">'+cu.n+'</td></tr>';cu.tr.forEach(function(t){rh+='<tr><td>'+t[1]+'</td><td><input class="t" data-r="'+t[0]+'-v" placeholder="0:00.000" inputmode="decimal"></td><td><input class="t" data-r="'+t[0]+'-t" placeholder="0:00.000" inputmode="decimal"></td><td><input data-r="'+t[0]+'-p" placeholder="Ej. Bebés en Goo-Goo"></td></tr>';});});
+el("rec").innerHTML=rh;
+el("rec").addEventListener("input",function(e){var i=e.target.closest("input[data-r]");if(!i)return;var v=i.value.slice(0,40);if(v)state.rec[i.dataset.r]=v;else delete state.rec[i.dataset.r];save();});
+
+/* generic checkbox handler */
+document.addEventListener("change",function(e){var i=e.target;if(i.matches&&i.matches("input[type=checkbox][data-id]")){if(i.checked)state.c[i.dataset.id]=1;else delete state.c[i.dataset.id];save();update();}});
+
+function toggle(id){if(state.c[id])delete state.c[id];else state.c[id]=1;save();update();if(state.c[id]){var p=id.slice(2);var r=R[p];if(r&&!r.none)toast("🏆 ¡Oro! Desbloqueaste: "+r.b);else toast("🏆 ¡Oro conseguido!");}}
+
+/* ===== UPDATE ===== */
+var lastPct=-1;
+function count(ids){var n=0;ids.forEach(function(x){if(on(x))n++;});return n;}
+function update(){
+ /* route cells */
+ document.querySelectorAll(".cell").forEach(function(b){var id=b.dataset.id,p=id.split("-");var d=on(id);b.classList.toggle("done",d);b.setAttribute("aria-pressed",d?"true":"false");b.classList.toggle("locked",!d&&!available(p[1],p[2]));});
+ CLASSES.forEach(function(c){el("rp-"+c.id).textContent=count(CUPS.map(function(u){return "t-"+c.id+"-"+u.id;}))+"/5";});
+ var tr=count(TROPHIES);
+ /* pilots */
+ var pil=0;PAIRS.forEach(function(p,i){var got=!p.t||on("t-"+p.t);var d=el("pair-"+i);d.classList.toggle("lockd",!got);d.querySelectorAll(".pchip").forEach(function(c){c.className="pchip "+(got?"on":"off");});var st=d.querySelector(".st");if(st){st.className="st "+(got?"on":"off");st.textContent=got?"DESBLOQUEADOS":"SECRETO";}if(got)pil+=2;});
+ /* karts */
+ var kc=0,ktot=0;KARTS.forEach(function(k,i){if(k.g)return;ktot++;var got=!k.t||on("t-"+k.t);if(got)kc++;var row=el("kart-"+i);row.classList.toggle("got",got);var s=row.querySelector(".kst");s.className="kst "+(got?"on":"off");s.textContent=got?"EN GARAJE":"BLOQUEADO";});
+ /* arenas */
+ var ac=0;ARENAS.forEach(function(a,i){var got=!a[2]||on("t-"+a[2]);if(got)ac++;var s=el("arena-"+i).querySelector(".kst");s.className="kst "+(got?"on":"off");s.textContent=got?"LISTA":"BLOQUEADA";});
+ /* shortcuts */
+ var scn=count(SCIDS);
+ TRACKCUPS.forEach(function(cu){cu.tr.forEach(function(t){var ids=SC[t[0]][2].map(function(_,i){return "s-"+t[0]+"-"+i;});var n=count(ids);el("cnt-"+t[0]).textContent=n+"/"+ids.length;el("sci-"+t[0]).classList.toggle("full",n===ids.length);});});
+ var ten=count(TECHIDS),ren=count(RETOIDS);
+ RETOS.forEach(function(r,i){el("reto-"+i).classList.toggle("on",on("r-"+i));});
+ var pts=0;RETOS.forEach(function(r,i){if(on("r-"+i))pts+=r[0];});el("retoPts").textContent=pts+" / 1500 PTS";
+ document.querySelectorAll("input[type=checkbox][data-id]").forEach(function(i){i.checked=on(i.dataset.id);});
+ /* section counters */
+ el("pct-ruta").textContent=tr+"/20";el("pct-pilotos").textContent=pil+"/20";el("pct-garaje").textContent=kc+"/"+ktot;el("pct-arenas").textContent=ac+"/6";el("pct-atajos").textContent=scn+"/"+SCIDS.length;el("pct-escuela").textContent=ten+"/8";el("pct-retos").textContent=ren+"/6";
+ /* bonus */
+ var bb=el("bonusBox");bb.classList.toggle("got",tr===20);el("bonusTxt").textContent=tr===20?"¡Lo lograste! 20 de 20 oros: ya tienes la pantalla de título alterna.":"consigue el oro en las 20 casillas (incluyendo Todas las Copas en 50cc y 100cc, que no dan nada por sí solas) y cambia el fondo de la pantalla de título.";
+ /* totals: everything the player checks */
+ var done=tr+scn+ten+ren,total=20+SCIDS.length+8+6;
+ var pct=Math.round(done/total*100);if(done===total)pct=100;else if(pct===100)pct=99;
+ var stats=[["Oros",tr,20],["Pilotos",pil,20],["Karts",kc,ktot],["Arenas",ac,6],["Atajos",scn,SCIDS.length],["Técnicas",ten,8],["Retos",ren,6],["Juego",Math.round(tr/20*100),100,"%"]];
+ el("stats").innerHTML=stats.map(function(s){return '<div class="stat"><div class="lb"><span>'+s[0]+'</span><span>'+(s[3]?s[1]+"%":s[1]+"/"+s[2])+'</span></div><div class="bar"><i style="width:'+(s[1]/s[2]*100)+'%"></i></div></div>';}).join("");
+ el("ringPct").textContent=pct+"%";el("miniPct").textContent=pct+"%";el("miniFill").style.width=pct+"%";
+ el("ringFg").style.strokeDashoffset=389.56*(1-pct/100);
+ el("ringFg").setAttribute("stroke",pct===100?"#4FAC35":"#DC122E");
+ if(lastPct!==-1&&pct===100&&lastPct<100){confetti();toast("🍅🏁 ¡100%! Etiqueta a @compasscatchup con tu captura");}
+ else if(lastPct!==-1&&tr===20&&lastTr<20){confetti();}
+ lastPct=pct;lastTr=tr;
+}
+var lastTr=0;
+
+/* ===== UI helpers ===== */
+var tt;function toast(m){var t=el("toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){t.classList.remove("show");},2600);}
+function confetti(){if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;var cols=["#DC122E","#FFC81E","#4FAC35","#3aa7e8","#fff","#0b0c0e"];for(var i=0;i<90;i++){var c=document.createElement("div");c.className="confetti";c.style.left=Math.random()*100+"vw";c.style.background=cols[i%cols.length];c.style.animationDuration=(2+Math.random()*2.5)+"s";c.style.animationDelay=(Math.random()*.6)+"s";document.body.appendChild(c);setTimeout(function(x){return function(){x.remove();};}(c),5200);}}
+
+el("expBtn").addEventListener("click",function(){var blob=new Blob([JSON.stringify({app:"cc-mkdd",v:1,fecha:new Date().toISOString(),data:state},null,1)],{type:"application/json"});var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="progreso-double-dash-compasscatchup.json";document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);toast("Archivo de progreso descargado");});
+el("impBtn").addEventListener("click",function(){el("impFile").click();});
+el("impFile").addEventListener("change",function(e){var f=e.target.files[0];if(!f)return;var rd=new FileReader();rd.onload=function(){try{var d=JSON.parse(rd.result);if(d.app!=="cc-mkdd"||!d.data)throw 0;state={c:d.data.c||{},rec:d.data.rec||{},quiz:d.data.quiz||{}};save();fillRec();renderQuiz();lastPct=-1;update();toast("Progreso importado ✔");}catch(x){toast("Ese archivo no es un progreso válido de esta guía");}e.target.value="";};rd.readAsText(f);});
+el("rstBtn").addEventListener("click",function(){if(!confirm("¿Borrar todo tu progreso de este navegador? No se puede deshacer."))return;state={c:{},rec:{},quiz:{}};save();fillRec();renderQuiz();update();toast("Progreso reiniciado");});
+function fillRec(){document.querySelectorAll("#rec input[data-r]").forEach(function(i){i.value=state.rec[i.dataset.r]||"";});}
+
+/* theme */
+var root=document.documentElement;
+try{var th=localStorage.getItem("cc-theme");if(th)root.setAttribute("data-theme",th);}catch(e){}
+el("themeBtn").addEventListener("click",function(){var cur=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");var nx=cur==="dark"?"light":"dark";root.setAttribute("data-theme",nx);try{localStorage.setItem("cc-theme",nx);}catch(e){}});
+
+load();fillRec();renderQuiz();update();
+/* Press Start 2P no trae mayusculas acentuadas: se normalizan solo los textos en esa fuente */
+(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){var p=n.parentElement;if(p&&getComputedStyle(p).fontFamily.indexOf("Press Start")>-1){n.nodeValue=n.nodeValue.normalize("NFD").replace(/[\u0300-\u036f]/g,"");}}})();
+if(!storageOK)save();
+})();
+</script>
+</body>
+</html>
